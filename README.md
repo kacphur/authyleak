@@ -1,4 +1,4 @@
-````md
+
 <div align="center">
 
 ```text
@@ -96,4 +96,4 @@ built for osu-ac research
 ```
 
 </div>
-````
+
