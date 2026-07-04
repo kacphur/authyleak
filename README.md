@@ -1,106 +1,99 @@
-```md
+````md
 <div align="center">
 
-# authyleak
-
-```
-
-█████╗ ██╗   ██╗████████╗██╗  ██╗██╗   ██╗██╗     ███████╗ █████╗ ██╗  ██╗
+```text
+ █████╗ ██╗   ██╗████████╗██╗  ██╗██╗   ██╗██╗     ███████╗ █████╗ ██╗  ██╗
 ██╔══██╗██║   ██║╚══██╔══╝██║  ██║╚██╗ ██╔╝██║     ██╔════╝██╔══██╗██║ ██╔╝
 ███████║██║   ██║   ██║   ███████║ ╚████╔╝ ██║     █████╗  ███████║█████╔╝
 ██╔══██║██║   ██║   ██║   ██╔══██║  ╚██╔╝  ██║     ██╔══╝  ██╔══██║██╔═██╗
 ██║  ██║╚██████╔╝   ██║   ██║  ██║   ██║   ███████╗███████╗██║  ██║██║  ██╗
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+```
 
-````
-
-finds osu! auth tokens and memory offsets.
+*find osu! auth tokens & memory offsets.*
 
 </div>
 
 ---
 
-## what it does
+```txt
+> status
 
-authyleak attaches to `osu!.exe` and helps you find:
-
-- jwt auth tokens
-- audio offset
-- mouse position pointer
-- left mouse button address
-- right mouse button address
-
-made for finding the values needed by osu-ac.
-
----
-
-## features
-
-- automatic dependency installer
-- auto admin request
-- windows terminal support
-- interactive memory scanner
-- simple menu
-- coloured terminal ui
-
----
-
-## requirements
-
-- windows
-- python 3.10+
-- osu! running
-
----
+platform  :: windows
+python    :: 3.10+
+target    :: osu!.exe
+version   :: 3.1
+```
 
 ## install
 
-```bash
+```powershell
 git clone https://github.com/kacphur/authyleak
 
 cd authyleak
 
 installer.bat
-````
+```
 
 or
 
-```bash
+```powershell
 pip install pymem rich psutil pywin32
+
 python authyleak.py
 ```
 
 ---
 
-## menu
+## functions
 
-```text
+```txt
+[01] auth token scanner
+[02] audio offset finder
+[03] left mouse address
+[04] right mouse address
+[05] mouse position pointer
+```
+
+---
+
+<details>
+<summary><b>preview</b></summary>
+
+```txt
+v3.1.0 │ 20:54:18 │ attached to osu!.exe
+
 1. find auth token
-
 2. find audio offset
-
 3. find left mouse button
-
 4. find right mouse button
-
 5. find mouse pointer
 
-6. exit
+>
 ```
+
+</details>
 
 ---
 
-## notes
+```txt
+> notes
 
-run as administrator.
-
-leave osu! open before scanning.
-
----
-
-## license
-
-mit
-
+• run as administrator
+• keep osu! open
+• installer installs missing packages automatically
+• works in windows terminal
 ```
+
+<div align="center">
+
+```txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+built for osu-ac research
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
+
+</div>
+````
